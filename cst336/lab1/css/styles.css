@@ -1,0 +1,106 @@
+body {
+    background-color:black;
+    color:gray;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;        /* by default, links are blue */ 
+}
+
+nav a:hover { /*pseudo class*/
+    border-bottom:2px #efadff solid;
+    font-size: 2em;
+    transition: .9s;    /* transition effect */  
+}
+
+nav a.active {
+    color: #efadff;
+    font-weight: bold;
+    border-bottom: 2px #efadff solid;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    font-size: 0.8em;
+    color: #efadff;
+}
+
+table {
+    margin: 0px auto; 
+}
+
+td{
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: #f5cfff;
+}
+
+#table-header {
+    background-color:#29004b;
+}
+
+.table-row {
+    background-color:#5e0075;
+    color: white;
+}
+
+ul {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    color: white
+}
+
+.hobby {
+    color:#cd009d
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#content > * {
+    margin-bottom: 20px;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#info iframe {
+    width: 800px;
+    max-width: 900px;
+    height: 900px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
