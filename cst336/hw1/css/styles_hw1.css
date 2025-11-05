@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(144, 208, 252);
+    color: black;
+}
+
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: rgb(0, 118, 122);        /* by default, links are blue */ 
+}
+
+nav a:hover { /*pseudo class*/
+    border-bottom:2px rgb(0, 0, 0) solid;
+    font-size: 2em;
+    transition: .9s;    /* transition effect */  
+}
+
+nav a.active {
+    color: rgb(0, 52, 54);
+    font-weight: bold;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+#history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+#history figure {
+    margin:0 auto;
+}
+
+#history img {
+    max-width: 300px;
+    height: auto;
+}
+
+#history .history-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+#history .history-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+}
+
+#pop figure {
+    margin:0 auto;
+}
+
+#pop img {
+    max-width: 300px;
+    height: auto;
+}
+
+.pop-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.types-text{
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#types figure {
+    margin:0 auto;
+}
+
+#types img {
+    max-width: 500px;
+    height: auto;
+}
+
+
+
