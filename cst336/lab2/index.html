@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8">
+        <link href="C:\Users\raque\OneDrive\Documents\guess_number\css\style.css" rel="stylesheet">
+    </head>
+    <body>
+        <figure id="back">
+            <img src="C:\Users\raque\OneDrive\Documents\guess_number\img\back.jpg" alt="Background Image">
+        </figure>
+
+        <header class="text-box">
+            <h1>Guess the Number!</h1>
+            <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        </header>
+        <br>
+        <div id="main" class="text-box">
+          Enter a guess: 
+          <input type="text" id="playerGuess" size="5">         
+          <button id="guessBtn"> Guess </button> <br>
+          <button id="resetBtn"> Reset </button> 
+          <div id="feedback"></div>
+          <div> Previous Guesses:
+            <span id="guesses"></span>
+          </div>
+          <div id = "attemptsLeft"> Attempts Left: 7 </div>
+          <div id="scoreboard">
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+          </div>
+        </div>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
