@@ -26,7 +26,7 @@ function displayQ8Choices(){
     container.innerHTML = "";
 
     for(let i = 0; i < q8ChoicesArray.length; i++) {
-        let id = q8ChoicesArray[i].toLowerCase().replace(/\s/g, "");
+        let id = q8ChoicesArray[i].toLowerCase().replace(/\s/g, "_");
         let value = id;
 
         container.innerHTML +=`
@@ -162,5 +162,6 @@ function gradeQuiz() {
 
     document.querySelector("#totalAttempts").innerHTML = `Total Attempts: ${++attempts}`;
     localStorage.setItem("total_attempts", attempts);
+
 
 }
