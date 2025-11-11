@@ -30,7 +30,7 @@ function displayQ8Choices(){
         let value = id;
 
         container.innerHTML +=`
-            <input type="radio" name="q8" id="${id}" value = "${value}">
+            <input type="radio" name="q8" id="${id}" value="${value}">
             <label for="${id}">${q8ChoicesArray[i]}</label><br>`;
    }
 }
@@ -165,3 +165,4 @@ function gradeQuiz() {
 
 
 }
+
