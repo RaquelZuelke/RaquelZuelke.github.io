@@ -1,0 +1,12 @@
+#quiz-container{
+    background-image: url("../img/us.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    width: 80%;
+    color: rgb(0, 71, 129);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
