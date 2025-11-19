@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/poke.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+input, button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+button{
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+.poke-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 350px;
+    flex-wrap: wrap;
+}
+
+.poke-circle{
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.poke-circle img{
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    width: auto;
+}
+
+.poke-info{
+    text-align: left;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#topImg{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #00e1ff,
+                 0 0 20px #00e1ff,
+                 0 0 30px #00e1ff;
+    margin-bottom: 25px;
+}
+.type-electric{
+    box-shadow: 0 0 25px yellow;
+}
+
+.type-fire{
+    box-shadow: 0 0 25px red;
+}
+
+.type-water {
+    box-shadow: 0 0 25px #4990e2;
+}
+
+.type-grass {
+    box-shadow: 0 0 25px #3cb043;
+}
+
+.type-psychic {
+    box-shadow: 0 0 25px #ff66cc;
+}
+
+.type-dark{
+    box-shadow: 0 0 25px #292929;
+}
+
+.type-fairy {
+    box-shadow: 0 0 25px #ffb7ff;
+}
+
+.type-dragon{
+    box-shadow: 0 0 25px purple;
+}
