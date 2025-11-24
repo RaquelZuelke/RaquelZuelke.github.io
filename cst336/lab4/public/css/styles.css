@@ -1,0 +1,14 @@
+body{
+    background-color: #CBE2F6;
+    text-align: center;
+}
+
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #b154fd;
+}
