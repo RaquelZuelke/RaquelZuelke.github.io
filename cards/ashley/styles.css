@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -10,46 +10,32 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
     text-align: center;
 }
 
-.card-front{
-    position: relative;
-    padding: 40 px 25px;
-    border-radius: 20px;
-    max-width: 420px;
-    width: 95%;
-    min-height: 450px;
-    display: flex;
+/* ---------- FRONT CARD ---------- */
+.card-front { 
+    position: relative; 
+    padding: 40px 25px; 
+    border-radius: 20px; 
+    max-width: 420px; 
+    width: 95%; 
+    min-height: 450px; 
+    display: flex; 
     flex-direction: column; 
-    justify-content: space-between;
-    text-align: center;
-    color: rgb(96, 2, 2);
-    overflow: hidden;
-}
+    justify-content: space-between; 
+    background: white; 
+    color: rgb(96, 2, 2); 
+    overflow: hidden; }
 
-.bg-front{
+.bg-front {
     background-image: url("img/cac.gif");
-    background-size: cover;
+    background-size: 130%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
-
-.card-open {
-    display: flex;
-    gap: 10px;
-    width: 90%;
-    max-width: 600px;
-}
-
-.card-half {
-    background: white;
-    color: #9e2121;
-    padding: 20px;
-    border-radius: 15px;
-    flex: 1;
-}
+/* ---------- BUTTONS ---------- */
 
 .btn {
     align-self: flex-end;
@@ -67,30 +53,88 @@ body {
     background: #8dd385;
 }
 
-.close-btn {
-    margin-top: 30px;
+/* ---------- SINGLE CARD PAGES (LEFT / RIGHT / BACK) ---------- */
+
+.single-card {
+    width: 95%;
+    max-width: 420px;
+    min-height: 480px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: white;                 /* white card */
+    color: rgb(96, 2, 2);               /* maroon text */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* ---------- CARD CONTENT ---------- */
+
+.card-content {
+    text-align: center;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+/* ---------- IMAGES ---------- */
+
+.left-img {
+    width: 90%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+}
+
+.right-img {
+    width: 85%;
+    max-width: 260px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* ---------- BACK CARD ---------- */
+
+.bg-back {
+    background: white;
+}
+
+.center-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.signature {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ---------- BUTTON POSITION ---------- */
+
+.next-btn,
+.back-btn {
+    align-self: flex-end;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+}
+
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 700px) {
-    .card-open {
-        flex-direction: column;
+    body {
+        padding: 10px;
     }
-}
-
-.card-image {
-    width: 80%;
-    max-width: 220px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-    border-radius: 12px;
-}
-
-.card-them {
-    width: 60%;
-    max-width: 220px;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
-    border-radius: 12px;
 }
