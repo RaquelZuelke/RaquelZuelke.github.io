@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="single-card bg-back center-text">
+        <p>"Chance made us colleagues, gossiping, sarcasm and a mutual hatred of the same people made us Friends!"</p>
+        <img src="img/cover.gif" alt="signature" class="signature-img">
+        <p class="signature">
+            by Raquel 2025🖤
+        </p>
+
+        <a href="index.html" class="btn back-btn" id="closeBtn">Front</a>
+        <audio id="closeAudio">
+            <source src="audio/hoa.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            const button = document.getElementById("closeBtn");
+            const audio = document.getElementById("closeAudio");
+            button.addEventListener("click", function(e) {
+                e.preventDefault();
+                audio.play();
+                setTimeout(() => {
+                    window.location.href = "index.html";
+                }, 5000); // Delay navigation by 1 second to allow audio to play
+            });
+        </script>
+    </div>
+</body>
+</html>
